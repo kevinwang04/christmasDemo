@@ -1,0 +1,484 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline
+}
+
+body {
+    line-height: 1;
+    color: #000;
+    background: #fff
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    vertical-align: middle
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle
+}
+
+a img {
+    border: none
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    background-color: #45a176;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%
+}
+
+#container {
+    position: absolute;
+    top: calc(50% + 1.5rem);
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0)
+}
+
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #265941;
+    padding: .25rem;
+    text-align: center;
+}
+
+#topbar button {
+    background: none;
+    border: 1px solid #fff;
+    outline: none;
+    margin: .25rem;
+    padding: .5rem;
+    font: inherit;
+    font-size: .875rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#topbar button:hover {
+    background-color: #fff;
+    color: #444
+}
+
+.message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem .5rem;
+    font-size: .5rem;
+    text-align: center
+}
+
+.card {
+    position: absolute;
+    display: inline-block;
+    left: -1.9375rem;
+    top: -2.75rem;
+    width: 4.875rem;
+    height: 5.5rem;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    cursor: default;
+}
+
+.card .topleft,
+.card .bottomright {
+    position: absolute;
+    font-size: .007rem;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -.1rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    white-space: pre
+}
+
+.card .topleft {
+    top: .25rem;
+    left: .25rem;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
+}
+
+.card .bottomright {
+    bottom: .25rem;
+    right: .25rem;
+    -webkit-transform: rotate(180deg) translate(-50%, 0);
+    -moz-transform: rotate(180deg) translate(-50%, 0);
+    -o-transform: rotate(180deg) translate(-50%, 0);
+    -ms-transform: rotate(180deg) translate(-50%, 0);
+    transform: rotate(180deg) translate(-50%, 0)
+}
+
+.card .face {
+    height: 100%;
+    background-position: 50% 50%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+}
+
+.card.joker .topleft,
+.card.joker .bottomright {
+    font-size: .4rem
+}
+
+.card.spades,
+.card.clubs,
+.card.joker {
+    color: #000
+}
+
+.card.hearts,
+.card.diamonds {
+    color: #f00
+}
+
+.card.spades1 .face {
+    background-image: url("faces/1.pic_thumb.jpg")
+}
+
+.card.spades2 .face {
+    background-image: url("faces/2.pic_thumb.jpg")
+}
+
+.card.spades3 .face {
+    background-image: url("faces/3.pic_thumb.jpg")
+}
+
+.card.spades4 .face {
+    background-image: url("faces/4.pic_thumb.jpg")
+}
+
+.card.spades5 .face {
+    background-image: url("faces/5.pic_thumb.jpg")
+}
+
+.card.spades6 .face {
+    background-image: url("faces/6.pic_thumb.jpg")
+}
+
+.card.spades7 .face {
+    background-image: url("faces/7.pic_thumb.jpg")
+}
+
+.card.spades8 .face {
+    background-image: url("faces/8.pic_thumb.jpg")
+}
+
+.card.spades9 .face {
+    background-image: url("faces/9.pic_thumb.jpg")
+}
+
+.card.spades10 .face {
+    background-image: url("faces/10.pic_thumb.jpg")
+}
+
+.card.spades11 .face {
+    background-image: url("faces/11.pic_thumb.jpg")
+}
+
+.card.spades12 .face {
+    background-image: url("faces/12.pic_thumb.jpg")
+}
+
+.card.spades13 .face {
+    background-image: url("faces/13.pic_thumb.jpg")
+}
+
+.card.hearts1 .face {
+    background-image: url("faces/10.pic_thumb.jpg")
+}
+
+.card.hearts2 .face {
+    background-image: url("faces/11.pic_thumb.jpg")
+}
+
+.card.hearts3 .face {
+    background-image: url("faces/12.pic_thumb.jpg")
+}
+
+.card.hearts4 .face {
+    background-image: url("faces/13.pic_thumb.jpg")
+}
+
+.card.hearts5 .face {
+    background-image: url("faces/14.pic_thumb.jpg")
+}
+
+.card.hearts6 .face {
+    background-image: url("faces/15.pic_thumb.jpg")
+}
+
+.card.hearts7 .face {
+    background-image: url("faces/16.pic_thumb.jpg")
+}
+
+.card.hearts8 .face {
+    background-image: url("faces/17.pic_thumb.jpg")
+}
+
+.card.hearts9 .face {
+    background-image: url("faces/18.pic_thumb.jpg")
+}
+
+.card.hearts10 .face {
+    background-image: url("faces/23.pic_thumb.jpg")
+}
+
+.card.hearts11 .face {
+    background-image: url("faces/24.pic_thumb.jpg")
+}
+
+.card.hearts12 .face {
+    background-image: url("faces/25.pic_thumb.jpg")
+}
+
+.card.hearts13 .face {
+    background-image: url("faces/26.pic_thumb.jpg")
+}
+
+.card.clubs1 .face {
+    background-image: url("faces/19.pic_thumb.jpg")
+}
+
+.card.clubs2 .face {
+    background-image: url("faces/20.pic_thumb.jpg")
+}
+
+.card.clubs3 .face {
+    background-image: url("faces/21.pic_thumb.jpg")
+}
+
+.card.clubs4 .face {
+    background-image: url("faces/22.pic_thumb.jpg")
+}
+
+.card.clubs5 .face {
+    background-image: url("faces/23.pic_thumb.jpg")
+}
+
+.card.clubs6 .face {
+    background-image: url("faces/24.pic_thumb.jpg")
+}
+
+.card.clubs7 .face {
+    background-image: url("faces/25.pic_thumb.jpg")
+}
+
+.card.clubs8 .face {
+    background-image: url("faces/26.pic_thumb.jpg")
+}
+
+.card.clubs9 .face {
+    background-image: url("faces/27.pic_thumb.jpg")
+}
+
+.card.clubs10 .face {
+    background-image: url("faces/36.pic_thumb.jpg")
+}
+
+.card.clubs11 .face {
+    background-image: url("faces/37.pic_thumb.jpg")
+}
+
+.card.clubs12 .face {
+    background-image: url("faces/2_12.svg")
+}
+
+.card.clubs13 .face {
+    background-image: url("faces/2_13.svg")
+}
+
+.card.diamonds1 .face {
+    background-image: url("faces/28.pic_thumb.jpg")
+}
+
+.card.diamonds2 .face {
+    background-image: url("faces/29.pic_thumb.jpg")
+}
+
+.card.diamonds3 .face {
+    background-image: url("faces/30.pic_thumb.jpg")
+}
+
+.card.diamonds4 .face {
+    background-image: url("faces/31.pic_thumb.jpg")
+}
+
+.card.diamonds5 .face {
+    background-image: url("faces/32.pic_thumb.jpg")
+}
+
+.card.diamonds6 .face {
+    background-image: url("faces/33.pic_thumb.jpg")
+}
+
+.card.diamonds7 .face {
+    background-image: url("faces/34.pic_thumb.jpg")
+}
+
+.card.diamonds8 .face {
+    background-image: url("faces/35.pic_thumb.jpg")
+}
+
+.card.diamonds9 .face {
+    background-image: url("faces/36.pic_thumb.jpg")
+}
+
+.card.diamonds10 .face {
+    background-image: url("faces/3_10.svg")
+}
+
+.card.diamonds11 .face {
+    background-image: url("faces/3_11.svg")
+}
+
+.card.diamonds12 .face {
+    background-image: url("faces/3_12.svg")
+}
+
+.card.diamonds13 .face {
+    background-image: url("faces/3_13.svg")
+}
+
+.card.joker1 .face {
+    background-image: url("faces/4_1.svg")
+}
+
+.card.joker2 .face {
+    background-image: url("faces/4_2.svg")
+}
+
+.card.joker3 .face {
+    background-image: url("faces/4_3.svg")
+}
+
+@media (max-width:540px) {
+    #topbar {
+        text-align: left
+    }
+    .gh-ribbon {
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -o-transform: scale(.5);
+        -ms-transform: scale(.5);
+        transform: scale(.5);
+        -webkit-transform-origin: 100% 0;
+        -moz-transform-origin: 100% 0;
+        -o-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+        transform-origin: 100% 0
+    }
+}
+
+@media (min-width:800px) {
+    html {
+        font-size: 125%
+    }
+}
