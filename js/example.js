@@ -17,11 +17,11 @@ var $bysuit = document.createElement('button')
 var $fan = document.createElement('button')
 var $poker = document.createElement('button')
 
-$shuffle.textContent = 'Shuffle'
-$sort.textContent = 'Sort'
-$bysuit.textContent = 'By suit'
-$fan.textContent = 'Fan'
-$poker.textContent = 'Poker'
+$shuffle.textContent = '洗牌'
+$sort.textContent = '排序'
+$bysuit.textContent = '平铺'
+$fan.textContent = '展示'
+$poker.textContent = '随机抽'
 
 $topbar.appendChild($shuffle)
 $topbar.appendChild($sort)
